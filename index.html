@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tacita Dean</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root{
+                --c:brown;
+                --altura:70vh;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                font-size: 14px;
+            }
+            header{
+                width: 100%;
+                display: flex;
+            }
+            header>div{
+                width: 50%;
+                height: 60vh;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            div{
+                width: 300%;
+                height: 300px;
+            }
+            .bloc_esq{
+                background: black;
+            }
+            .bloc_esq img{
+                object-fit: cover;
+                object-position: center;
+            }
+            .bloc_dre{
+                background: grey;
+            }
+            .bloc_dre img{
+                object-fit: cover;
+                object-position: center;
+            }
+            h1{
+                font-family: 'Anton', sans-serif;
+                height: 30vh;
+                position: absolute;
+                text-align: center;
+                top: 4vh;
+                font-size: 3vw;
+                width: 75%;
+                color: white;
+            }
+            article{
+                width: 37.5em;
+                margin: auto;
+                font-family: 'Domine-Regular';
+            }
+            article>p:first-child{
+                padding: 35px 0;
+                color: dimgrey;
+                column-count: 2;
+                column-gap: 30px;
+                text-align: justify;
+                hyphens: auto;
+                line-height: 20px;
+                column-rule: 1px solid brown;
+            }
+            article #cos>p:first-child::first-letter{
+                color: brown;
+                font-family: 'Domine-Bold';
+                font-size: 5em;
+                float: left;
+                margin-right: 0em;
+                padding-top: -0.35em;
+                margin-bottom:: -0.4em;
+                padding-bottom: 0.2em;
+                padding-right: 0.2em;
+            }
+            article #cos{
+                font-family: 'Domine-Regular';
+                text-align: justify;
+                hyphens: auto;
+                width: auto;
+                padding: 0 4em;
+            }
+            article #cos p{
+                padding: 0 0 1.5em 0;
+            }
+            .cercle, .hexagon{
+                background: brown;
+                opacity: 90%;
+            }
+            .cercle img, .hexagon img{
+                mix-blend-mode: hard-light;
+            }
+            .cercle, .cercle img{
+                border-radius: 50%;
+            }
+            .cercle{
+                max-width: 20em;
+                float: left;
+                margin: 20px;
+                margin-left: -8em;
+                shape-margin: 1em;
+                shape-outside: circle(50%)border-box;
+            }
+            .hexagon, .hexagon img{
+                clip-path: polygon(49% 9%, 100% 25%, 100% 75%, 49% 93%, 0% 75%, 0% 25%);
+            }
+            .hexagon{
+                max-width: 20em;
+                float: right;
+                margin: 20px;
+                margin-right: -8em;
+                shape-margin: 2em;
+                shape-outside: polygon(50% 9%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+            }
+            @media (max-width:37.5em){
+                body{
+                    background: azure;
+                    font-size: 12px;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="bloc_esq">
+                <img src="img/uno.jpg">
+            </div>
+            <div class="bloc_dre">
+                <img src="img/dos.jpg">
+            </div>
+            <h1>Tacita Dean <br>Canterbury 1965</h1>
+        </header>
+        <article>
+            <p>Tacita Charlotte Dean (Canterbury 1965) conocida Tacita Dean es una artista visual británica reconocida fundamentalmente por su trabajo como videoartista, destacando por el uso de la película de 16 mm.Miembro del grupo de artistas contemporáneos Young British Artists, fue nominada, en 1998 para el Premio Turner, el cual fue concedido, finalmente, al pintor Chris Ofili. Dean, ha expuesto en importantes espacios, como el Museo Nacional Centro de Arte Reina Sofía o la Tate Britain. En 2018 se convirtió en la primera artista en exponer simultaneamente en la Portrait, la National Gallery y la Royal Academy</p> 
+            <div id="cos">
+            <p>Tacita Dean nació en Canterbury, ciudad del sureste del Reino Unido. Es hija del juez Joseph Dean y hermana de Ptolemy Dean, arquitecto y presentador de televisión. Nieta de Basil Dean, director y productor de cine y teatro que en su día fundó los estudios cinematográficos Ealing. Actualmente, Dean vive y trabaja en Berlín.Desde 1985 hasta 1988 acudió a la Escuela de Arte de Falmouth. Tuvo una beca del gobierno griego para la Escuela de Bellas Artes Suprema de Atenas (1989 – 1990). En el periodo 1990 – 1992 acudió a la Escuela de Bellas Artes Slade, en Londres. En un primer momento se formó como pintora, pero posteriormente se dedicó al vídeo, trabajos por los que es conocida. Utiliza, no obstante, una gran variedad de medios, incluyendo dibujo, fotografía y sonido. También ha publicado varios libros, cuyos temas complementan su obra visual. Su trabajo más reciente no incluye comentarios, pero algunos de sus textos forman parte de los vídeos. Es una de las Young british artists.</p> 
+            <div class="cercle">
+            <img src= "img/tres.jpg">
+            </div>
+            <p>Los trabajos de Tacita Dean se caracterizan por el uso de formatos expresivos que, en muchos casos, el artista encuentra en el lenguaje cinematográfico. Algunos de los temas más tratados en sus obras se relacionan con el tiempo, la memoria y el mar. La atracción por lo efímero también es característica de su obra, tal como reconoce la propia artista: "No puedo precisar el origen de esta atracción, pero es cierto que me atraen las cosas que desaparecen, aunque a veces no sea consciente de que desaparecerán. [...] Sí, el yeso de mis pizarras se puede borrar, pero también es cierto que así es como se hacen los dibujos: dibujando y borrando y volviendo a dibujar. Es su naturaleza ". La trayectoria artística de Dean está muy ligada al videoarte, disciplina que utiliza un lenguaje propio del audiovisual pero que transgrede los códigos y las normas propias del cine y la televisión tradicionales. Así, las obras fílmicas de esta artista británica se caracterizan por las que son propias del videoarte: la plasmación de un estilo narrativo al margen de las convenciones del audiovisual tradicional, la búsqueda de nuevas imágenes y sonidos, y la ruptura del montaje y la duración de los planes propios de las producciones fílmicas habituales. En cuanto a su formato de filmación predilecto, la película de 16 mm, Tacita Dean afirma: "No mostraré mis películas en ningún otro formato. Así que si las cintas de cine desaparecen, mi trabajo también lo hará ".</p> 
+            <div class="hexagon">
+            <img src="img/cuatro.jpg">
+            </div>
+            <p>Las obras de Tacita Dean han exhibido en más de una decena de exposiciones en solitario y en una treintena de muestras en grupo. Entre las exposiciones en solitario más relevantes, sobresalen My engilsh breath in foregin clouds (2015), presentada en la Marian Goodman Gallery, en el que se exhibieron fotografías, vídeos, litografías, pinturas, etc., con las nubes como protagonistas. En Event for a Stage (2014), Tacita Dean presentó, junto con el actor Stephen Dillane, un happening de cuatro noches de duración grabado por una serie de cámaras de 16 mm, el formato preferido del artista. En De mar mar (2014), organizada por la Fundación Botín, Tacita Dean presentó una serie de obras de yeso sobre pizarra dedicadas al mar y la navegación. En el caso de las exposiciones en grupo, hay que subrayar Double Take (2016), celebrada en The Photographer 's Gallery, junto con los artistas Dave Allouche, Josh Brand, Margarita Gluzberg, Matt Saunders y Thomas Zummo, y Into great silence ( 2015), que, con obras de artistas como John Cage, Philip Gröning o Doris Salcedo, tuvo lugar en el Centro Andaluz de Arte Contemporáneo</p>
+            </div>
+        </article>
+    </body>
+</html>
